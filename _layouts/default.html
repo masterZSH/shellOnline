@@ -1,0 +1,198 @@
+<HTML>
+
+<HEAD>
+    <TITLE>zsh/shell - Terminal</TITLE>
+    <META name="description" content="zsh/shell - virtual JavaScript-OS and UNIX-emulator">
+    <META name="keywords" content="zsh/shell,JavaScript virtual UN*X,JavaScript virtual OS,JavaScript virtual Operating System,virtual Operating System for web browsers,JavaScript UNIX emulator,Hosted Operating System,by Norbert Landsteiner">
+
+    <STYLE TYPE="text/css">
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #222;
+            color: #33d011;
+        }
+
+        body,
+        p,
+        a,
+        td {
+            font-family: courier, fixed;
+            font-size: 12px;
+            color: #33d011;
+        }
+
+        a,
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: #77dd11;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #77dd11;
+        }
+
+        a:active {
+            text-decoration: underline;
+            color: #dddddd;
+        }
+
+        .term {
+            font-family: courier, fixed;
+            font-size: 20px;
+            color: #33d011;
+            background: none;
+            width: 96vw;
+        }
+
+        .termReverse {
+            font-family: courier, fixed;
+            font-size: 12px;
+            color: #111111;
+            background: #33d011;
+        }
+
+        .grey {
+            font-family: courier, fixed;
+            font-size: 12px;
+            color: #999999;
+        }
+
+        .disclaimer {
+            font-family: courier, fixed;
+            font-size: 10px;
+            color: #999999;
+        }
+
+        .keywords {
+            font-family: arial, helvetica, sans-serif;
+            font-size: 10px;
+            color: #222222;
+        }
+
+        a.disclaimer,
+        a.disclaimer:link,
+        a.disclaimer:visited {
+            text-decoration: none;
+            color: #b0b0b0;
+        }
+
+        a.disclaimer:hover {
+            text-decoration: underline;
+            color: #77dd11;
+        }
+
+        a.disclaimer:active {
+            text-decoration: underline;
+            color: #dddddd;
+        }
+
+        a.termopen,
+        a.termopen:link,
+        a.termopen:visited {
+            text-decoration: none;
+            color: #77dd11;
+            background: none;
+        }
+
+        a.termopen:hover {
+            text-decoration: none;
+            color: #222222;
+            background: #77dd11;
+        }
+
+        a.termopen:active {
+            text-decoration: none;
+            color: #222222;
+            background: #dddddd;
+        }
+
+
+
+    </STYLE>
+
+    <SCRIPT LANGUAGE="JavaScript" SRC="../jsuix_support/jsuix_gui.js" TYPE="text/javascript"></SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript" SRC="../jsuix_support/jsuix_krnl.js" TYPE="text/javascript"></SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript" SRC="../jsuix_support/jsuix_shell.js" TYPE="text/javascript"></SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript" SRC="../jsuix_support/jsuix_cmd.js" TYPE="text/javascript"></SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript" SRC="../jsuix_support/jsuix_vi.js" TYPE="text/javascript"></SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript" SRC="../jsuix_support/jsuix_inv.js" TYPE="text/javascript"></SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript" SRC="../jsuix_support/jsuix_man.js" TYPE="text/javascript"></SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript" SRC="../jsuix_support/jsuix_rc.js" TYPE="text/javascript"></SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript1.5" SRC="../jsuix_support/jsuix_trycatch.js" TYPE="text/javascript"></SCRIPT>
+</HEAD>
+
+<BODY BGCOLOR="#222222" LINK="#77dd11" TEXT="#33d011" ALINK="#dddddd" VLINK="#77dd11" TOPMARGIN="0" BOTTOMMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" MARGINHEIGHT="0" MARGINWIDTH="0">
+
+
+
+    <DIV STYLE="float:right; right:0; vertical-align: top;">
+        <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="140">
+            <TR>
+                <TD HEIGHT="35">&nbsp;</TD>
+            </TR>
+            <TR>
+            </TR>
+        </TABLE>
+    </DIV>
+
+    <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+        <TR>
+            <TD HEIGHT="35">
+                <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="105" HEIGHT="35">
+                    <TR>
+                        <TD>&nbsp;</TD>
+                    </TR>
+                </TABLE>
+            </TD>
+            <TD VALIGN="top">&nbsp;</TD>
+        </TR>
+        <TR>
+            <TD>
+                <IMG SRC="../jsuix_support/keycaps/spacer.gif" HEIGHT="408" WIDTH="1">
+            </TD>
+            <TD VALIGN="top" HEIGHT="408">
+                zsh/shell - Terminal
+                <BR>
+                <BR>
+                <A HREF="javascript:termOpen()" onfocus="if(this.blur)this.blur();" onmouseover="window.status='zsh/shell: open terminal and boot system'; return true" onmouseout="window.status=''; return true" CLASS="termopen">&gt; open terminal&nbsp;</A>
+                <BR>
+                <BR>
+                <BR> zsh/shell is an UN*X-like OS for standard web-browsers, written
+                <BR> entirely in JavaScript (no plug-ins used). It comprises a vir-
+                <BR> tual machine, shell, virtual file-system, process-management,
+                <BR> and brings its own terminal with screen- and keyboard-mapping.
+                <BR>
+                <BR> For an overview of implemented commands have a look at the
+                <BR> complete
+                <A HREF="man.txt" onfocus="if(this.blur)this.blur();" TARGET="_term_man">&gt; zsh/shell-Manual-Pages</A>; see also the
+                <A HREF="history.txt" onfocus="if(this.blur)this.blur();" TARGET="_term_man">&gt; Version-History</A>.
+                <BR>
+                <BR> The keyboard accepts the US-ASCII character set.
+                <BR> As key-mapping depends from your browser, you may have to use
+                <BR> the cursor and backspace buttons at the lower right of the
+                <BR> terminal. A complete keyboard can be accessed at the lower left.
+                <BR>
+                <BR> Compatibility: Netscape 4+, MS IE 4+ and DOM-aware browsers.
+                <BR>
+                <BR>
+               </TD>
+        </TR>
+    </TABLE>
+    <DIV ID="termDiv" STYLE="position:absolute; top:30px; left:2%;"></DIV>
+    <!--去除键盘-->
+<!--    <DIV ID="termKbdDiv" STYLE="position:absolute; top:290px; left:100px;visibility:hidden"></DIV>-->
+</BODY>
+
+<script type="text/javascript">
+    // 默认开启命令界面
+    termOpen();
+</script>
+</HTML>

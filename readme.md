@@ -7,7 +7,7 @@ shell在线和shell书籍合辑
 
 ## 在线demo
 
-[地址](!https://shell.zhoudapao.cn/)
+https://shell.zhoudapao.cn
 
 
 ## 演示

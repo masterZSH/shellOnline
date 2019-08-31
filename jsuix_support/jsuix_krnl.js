@@ -44,7 +44,7 @@ var krnlDevNull = 0;
 var krnlUIDcnt = 100;
 var krnlUIDs = new Array();
 var krnlGIDs = new Array();
-var conf_rootpassskey = '7B56B841C38BF38C';
+var conf_rootpassskey = '8875DC';
 var os_mdate = new Date(2003, 10, 05, 12, 0, 0);
 
 var jsuix_hasExceptions = false;
